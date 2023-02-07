@@ -8,7 +8,11 @@ export async function completeTask(request, response) {
   const [task] = database.select('tasks', { id })
 
   if (!task) {
-    return response.writeHead(404).end()
+    return response.writeHead(404).end(
+      JSON.stringify({
+        message: 'task is not exists',
+      }),
+    )
   }
 
   const taskChanged = {
