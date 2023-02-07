@@ -1,0 +1,18 @@
+{
+  "name": "nodejs-fundamentals-challenge",
+  "version": "1.0.0",
+  "description": "First node trail challenge based on a task management API",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [],
+  "author": "Azanniel",
+  "license": "MIT",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
+    "eslint": "^8.33.0"
+  }
+}
